@@ -1,0 +1,23 @@
+{
+    "name": "honor/hangman",
+    "description": "hangman game in PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mih-gif",
+            "email": "mihailgoo7@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "bin": ["bin/hangman.php"],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.6"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    }
+}
