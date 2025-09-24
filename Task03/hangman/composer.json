@@ -1,0 +1,36 @@
+{
+    "name": "honor/hangman",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.5"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mihgif\\hangman\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Model.php"
+        ]
+    },
+    "bin": [
+        "bin/hangman.php"
+    ],
+    "scripts": {
+        "phpcs": "phpcs --standard=PSR12 src bin",
+        "phpcs-fix": "phpcbf --standard=PSR12 src bin"
+    },
+    "description": "hangman game in PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mih-gif",
+            "email": "mihailgoo7@yandex.ru"
+        }
+    ],
+    "minimum-stability": "stable"
+}
