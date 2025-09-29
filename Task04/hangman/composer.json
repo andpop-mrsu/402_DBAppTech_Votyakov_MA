@@ -1,0 +1,27 @@
+{
+    "name": "honor/hangman",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.5"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mih_gif\\hangman\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php",
+            "src/Model.php",
+            "src/Database.php"
+        ]
+    },
+    "bin": [
+        "bin/hangman"
+    ],
+    "scripts": {
+        "phpcs": "phpcs --standard=PSR12 src bin",
+        "phpcs-fix": "phpcbf --standard=PSR12 src bin"
+    }
+}
