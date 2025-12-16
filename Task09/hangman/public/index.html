@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Виселица</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel" id="left-panel">
+      <div id="game-area">
+        <pre id="hangman"></pre>
+        <div id="word"></div>
+        <div id="letters"></div>
+      </div>
+
+    </div>
+
+    <div class="right-panel" id="right-panel">
+      <div id="message-container">
+        <div id="message"></div>
+      </div>
+
+      <input type="text" id="player-name" placeholder="Enter player name">
+      <button id="restart">Новая игра</button>
+      <button class="menu-btn" id="btn-list">Сохранённые игры</button>
+      <button class="menu-btn" id="btn-info">Информация</button>
+    </div>
+
+    <div id="full-area" style="display:none; width:100%; padding:20px;"></div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
